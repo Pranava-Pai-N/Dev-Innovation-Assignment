@@ -1,0 +1,21 @@
+{
+  "name": "dev-innovation",
+  "version": "1.0.0",
+  "description": "Dev Innovation CRM Project",
+  "license": "ISC",
+  "author": "Pranava Pai N",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "joi": "^18.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.10"
+  }
+}
