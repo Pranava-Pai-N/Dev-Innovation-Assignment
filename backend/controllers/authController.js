@@ -20,6 +20,7 @@ export const register = async (req, res) => {
 
 
         return res.status(201).json({
+            message:"User registered Successfully !",
             id: user._id,
             name: user.name,
             email: user.email,
@@ -56,7 +57,10 @@ export const login = async (req, res) => {
         });
 
 
-        return res.json({ token, user: { id: user._id, name: user.name, email: user.email, role: user.role } });
+        return res.json({ 
+            message : "User Logged in Successfully !",
+            token, 
+            user: { id: user._id, name: user.name, email: user.email, role: user.role } });
 
     } catch (err) {
         return res.status(500).json({ message: 'Login failed', error: err.message });
